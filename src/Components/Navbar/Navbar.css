@@ -1,5 +1,5 @@
 .nav {
-  background-color: var(--off-white);
+  background-color: var(--white);
   position: sticky;
   top: 0px;
   width: 100%;
@@ -20,7 +20,7 @@
 .navbar-brand-span {
   padding-left: 5px;
   padding-right: 5px;
-  color: var(--off-white);
+  color: var(--white);
   background-color: var(--primary);
 }
 
