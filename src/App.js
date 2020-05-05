@@ -9,36 +9,29 @@ function App() {
     <div className="App">
       <Navbar />
       <Section
-          title="Section 1"
+          title="Olá"
           subtitle={dummyText}
           dark={true}
           id="section1"
         />
         <Section
-          title="Section 2"
+          title="Sobre"
           subtitle={dummyText}
           dark={false}
           id="section2"
         />
         <Section
-          title="Section 3"
+          title="Curriculo"
           subtitle={dummyText}
           dark={true}
           id="section3"
         />
         <Section
-          title="Section 4"
+          title="Contato"
           subtitle={dummyText}
           dark={false}
           id="section4"
         />
-        <Section
-          title="Section 5"
-          subtitle={dummyText}
-          dark={true}
-          id="section5"
-        />
-      
     </div>
   );
 }

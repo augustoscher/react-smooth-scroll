@@ -27,7 +27,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <span>Section 1</span>
+              <span>Olá</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -39,7 +39,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <span>Section 2</span>
+              <span>Sobre</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -51,7 +51,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <span>Section 3</span>
+              <span>Curriculo</span>
             </Link>
           </li>
           <li className="nav-item">
@@ -63,19 +63,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
             >
-              <span>Section 4</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              activeClass="active"
-              to="section5"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <span>Section 5</span>
+              <span>Contato</span>
             </Link>
           </li>
         </ul>
