@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import Section from './Components/Section';
+import Section from './Components/Section/Section';
 import dummyText from './Components/DummyText';
 
 function App() {

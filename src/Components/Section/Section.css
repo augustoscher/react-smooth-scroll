@@ -1,0 +1,14 @@
+.section {
+  min-height: 650px;
+}
+
+.section-dark {
+  background: #9194AF;
+  color: white;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}

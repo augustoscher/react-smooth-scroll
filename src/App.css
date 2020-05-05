@@ -6,6 +6,8 @@
   --darken: #00010f;
 
   --primary: #000AFF;
+  
+   /* --primary: #1272de; */
   --secondary: #9194AF;
   --tertiary: #FF3465;
   --indigo:#6610f2;
@@ -13,21 +15,4 @@
   --pink:#e83e8c;
   --red:#dc3545;
   --orange:#fd7e14;
-}
-
-
-
-.section {
-  min-height: 650px;
-}
-
-.section-dark {
-  background: #9194AF;
-  color: white;
-}
-
-.section-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
 }

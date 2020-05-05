@@ -1,4 +1,5 @@
 import React from 'react'
+import './Section.css'
 
 const Section = ({ title, subtitle, dark, id }) => {
   return (
