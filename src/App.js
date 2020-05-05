@@ -11,25 +11,25 @@ function App() {
       <Section
           title="Olá"
           subtitle={dummyText}
-          dark={true}
+          colored={false}
           id="section1"
         />
         <Section
           title="Sobre"
           subtitle={dummyText}
-          dark={false}
+          colored={true}
           id="section2"
         />
         <Section
           title="Curriculo"
           subtitle={dummyText}
-          dark={true}
+          colored={false}
           id="section3"
         />
         <Section
           title="Contato"
           subtitle={dummyText}
-          dark={false}
+          colored={true}
           id="section4"
         />
     </div>
