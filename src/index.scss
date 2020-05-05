@@ -1,0 +1,63 @@
+
+$font-primary: 'Poppins', sans-serif;
+
+$white: #fff;
+$black: #00010f;
+$darken: #00010f;
+
+$primary: #000AFF;
+$secondary: #9194AF;
+$tertiary: #FF3465;
+$indigo:#6610f2;
+$purple:#6f42c1;
+$pink:#e83e8c;
+$red:#dc3545;
+$orange:#fd7e14;
+
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//      -moz-border-radius: $radius;
+//       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
+
+// @mixin transition($transition) {
+//     -moz-transition:    all $transition ease;
+//     -o-transition:      all $transition ease;
+//     -webkit-transition: all $transition ease;
+//     -ms-transition: 		all $transition ease;
+//     transition:         all $transition ease;
+// }
+
+body {
+  font-family: $font-primary;
+  // background: $white;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: darken($secondary, 30%);
+
+	// &.menu-show {
+	// 	overflow: hidden;
+	// 	position: fixed;
+	// 	height: 100%;
+	// 	width: 100%;
+	// }
+}
+
+// // a {
+// 	// transition: .3s all ease;
+// 	// color: $primary;
+// 	// &:hover, &:focus {
+// 	// 	text-decoration: none;
+// 	// 	color: $primary;
+// 	// 	outline: none !important;
+// 	// }
+// // }
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  // color: $black;
+  font-weight: 400;
+}
