@@ -5,8 +5,8 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="nav" id="navbar">
-      <div className="nav-content">
+    <nav className="navbar navbar-default navbar-fixed-top" id="navbar">
+      <div className="container">
         <Link
           className="navbar-brand"
           activeClass="active"

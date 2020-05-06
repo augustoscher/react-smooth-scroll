@@ -1,5 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react";
-import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Section from "./Components/Section/Section";
 import SECTION_TYPES from "./Constants/SectionType";

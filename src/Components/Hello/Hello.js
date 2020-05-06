@@ -13,9 +13,9 @@ const Hello = () => {
         <h1 className="name">Augusto Scher</h1>
         <div className="rotating-text">
           <ReactRotatingText
-            typingInterval={80}
+            typingInterval={50}
             color="#FF3465"
-            items={["Software Engineer at Resultados Digitais"]}
+            items={["Software Engineer", "at", "Resultados Digitais"]}
           />
         </div>
       </div>
