@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
-import SECTION_TYPES from '../../Constants/SectionType'
-import './Navbar.css'
+import SECTION_TYPES from "../../Constants/SectionType";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-default navbar-fixed-top" id="navbar">
-      <div className="container">
+    <nav className="navbar fixed-top navbar-light bg-light" id="navbar">
+      <div className="container-fluid">
         <Link
           className="navbar-brand"
           activeClass="active"
