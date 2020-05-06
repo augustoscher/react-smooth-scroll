@@ -1,7 +1,3 @@
-.react-rotating-text {
-  font-size: 16px;
-}
-
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
   color: var(--darken);
@@ -19,18 +15,8 @@
   }
 }
 
-.hello {
-  align-items: center!important;
-  justify-content: center!important;
-  margin-top: 50px;
-}
-
-.text-center {
-  text-align: center!important;
-}
-
 .rotating-text > span {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 800;
 }
 
@@ -40,13 +26,6 @@
   font-weight: 800;
   color: var(--primary);
   letter-spacing: 4px;
-}
-
-.name {
-  font-size: 60px;
-  font-weight: 800;
-  color: var(--black);
-  margin: 0;
 }
 
 .mouse{
