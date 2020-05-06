@@ -1,0 +1,8 @@
+const SECTION_TYPES = {
+  HELLO: 'HELLO',
+  ABOUT: 'ABOUT',
+  CURRICULUM: 'CURRICULUM',
+  CONTACT: 'CONTACT',
+};
+
+export default SECTION_TYPES;

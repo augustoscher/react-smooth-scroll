@@ -1,37 +1,17 @@
-import React from 'react';
-import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Section from './Components/Section/Section';
-import dummyText from './Components/DummyText';
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Section from "./Components/Section/Section";
+import SECTION_TYPES from "./Constants/SectionType";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Section
-          title="Olá"
-          subtitle={dummyText}
-          colored={false}
-          id="section1"
-        />
-        <Section
-          title="Sobre"
-          subtitle={dummyText}
-          colored={true}
-          id="section2"
-        />
-        <Section
-          title="Curriculo"
-          subtitle={dummyText}
-          colored={false}
-          id="section3"
-        />
-        <Section
-          title="Contato"
-          subtitle={dummyText}
-          colored={true}
-          id="section4"
-        />
+      <Section colored={false} id={SECTION_TYPES.HELLO} />
+      <Section colored={true} id={SECTION_TYPES.ABOUT} />
+      <Section colored={false} id={SECTION_TYPES.CURRICULUM} />
+      <Section colored={true} id={SECTION_TYPES.CONTACT} />
     </div>
   );
 }

@@ -1,16 +1,22 @@
-import React from 'react'
+import React from 'react';
+import './Hello.css';
+import ReactRotatingText from 'react-rotating-text';
 
 const Hello = () => {
   return (
     <div className="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-      <div className="text text-center">
-        <span className="subheading" role="img" aria-label="Hello" >👋 Eu sou</span>
-        <h1>Augusto Scher</h1>
-        <h2
-          className="txt-rotate"
-          data-period="2000"
-          data-rotate='[ "Software Engineer na Resultados Digitais" ]'
-        ></h2>
+      <div className="text-center">
+        <span className="subheading" role="img" aria-label="Hello">
+          👋 Eu sou
+        </span>
+        <h1 className="name">Augusto Scher</h1>
+        <div className="rotating-text">
+          <ReactRotatingText
+            typingInterval={80}
+            color="#FF3465"
+            items={["Software Engineer at Resultados Digitais"]}
+          />
+        </div>
       </div>
     </div>
   );

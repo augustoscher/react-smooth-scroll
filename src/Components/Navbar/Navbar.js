@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import SECTION_TYPES from '../../Constants/SectionType'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
         <Link
           className="navbar-brand"
           activeClass="active"
-          to="section1"
+          to={SECTION_TYPES.HELLO}
           spy={true}
           smooth="easeInOutBack"
           offset={-70}
@@ -21,9 +22,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="section1"
+              to={SECTION_TYPES.HELLO}
               spy={true}
-              smooth="easeInOutBack"
+              smooth={true}
               offset={-70}
               duration={500}
             >
@@ -33,9 +34,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="section2"
+              to={SECTION_TYPES.ABOUT}
               spy={true}
-              smooth="easeInOutBack"
+              smooth={true}
               offset={-70}
               duration={500}
             >
@@ -45,7 +46,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="section3"
+              to={SECTION_TYPES.CURRICULUM}
               spy={true}
               smooth={true}
               offset={-70}
@@ -57,7 +58,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="section4"
+              to={SECTION_TYPES.CONTACT}
               spy={true}
               smooth={true}
               offset={-70}
