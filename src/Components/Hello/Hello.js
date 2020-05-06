@@ -1,10 +1,11 @@
-import React from 'react';
-import './Hello.css';
-import ReactRotatingText from 'react-rotating-text';
+import React from "react";
+import "./Hello.scss";
+import Icon from "../../Assets/Icons/icon-mouse.svg";
+import ReactRotatingText from "react-rotating-text";
 
 const Hello = () => {
   return (
-    <div className="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+    <div className="hello">
       <div className="text-center">
         <span className="subheading" role="img" aria-label="Hello">
           👋 Eu sou
@@ -16,6 +17,11 @@ const Hello = () => {
             color="#FF3465"
             items={["Software Engineer at Resultados Digitais"]}
           />
+        </div>
+      </div>
+      <div className="mouse-icon">
+        <div className="mouse-wheel">
+          <img src={Icon} alt="mouse" />
         </div>
       </div>
     </div>

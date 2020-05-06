@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Section colored={false} id={SECTION_TYPES.HELLO} />
-      <Section colored={true} id={SECTION_TYPES.ABOUT} />
-      <Section colored={false} id={SECTION_TYPES.CURRICULUM} />
-      <Section colored={true} id={SECTION_TYPES.CONTACT} />
+      <Section colored={false} id={SECTION_TYPES.ABOUT} />
+      <Section colored={true} id={SECTION_TYPES.CURRICULUM} />
+      <Section colored={false} id={SECTION_TYPES.CONTACT} />
     </div>
   );
 }
