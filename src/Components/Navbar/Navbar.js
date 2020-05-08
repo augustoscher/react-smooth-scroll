@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { withTranslation } from 'react-i18next';
+
 import { Link } from "react-scroll";
 import SECTION_TYPES from "../../Constants/SectionType";
 import "./Navbar.css";
@@ -8,7 +10,7 @@ const NavItem = styled.div`
   padding: 8px;
 `;
 
-const Navbar = () => {
+const Navbar = ({ t }) => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -47,7 +49,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                <NavItem>Olá</NavItem>
+                <NavItem>{t('navbar.hello')}</NavItem>
               </Link>
             </li>
             <li className="nav-item">
@@ -93,4 +95,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default  withTranslation()(Navbar);
