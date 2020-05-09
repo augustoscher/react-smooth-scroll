@@ -11,8 +11,8 @@ const NavItem = styled.div`
 `;
 
 const RightDiv = styled.div`
-  margin-left:auto;
-  margin-right:0;
+  margin-left: auto;
+  margin-right: 0;
 `;
 
 const items = [
@@ -74,7 +74,9 @@ const Navbar = () => {
           }`}
         >
           <ul className="navbar-nav">{renderNav(t)}</ul>
-          <RightDiv><button>Pt</button></RightDiv>
+          <RightDiv>
+            <button>Pt</button>
+          </RightDiv>
         </div>
       </div>
     </nav>
