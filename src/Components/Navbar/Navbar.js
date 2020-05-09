@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import { Link } from "react-scroll";
 import SECTION_TYPES from "../../Constants/SectionType";
@@ -10,8 +10,9 @@ const NavItem = styled.div`
   padding: 8px;
 `;
 
-const Navbar = ({ t }) => {
+const Navbar = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const { t } = useTranslation(['translation', 'navbar']);
 
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
@@ -49,7 +50,7 @@ const Navbar = ({ t }) => {
                 offset={-70}
                 duration={500}
               >
-                <NavItem>{t('navbar.hello')}</NavItem>
+                <NavItem>{t('navbar:welcome')}</NavItem>
               </Link>
             </li>
             <li className="nav-item">
@@ -61,7 +62,7 @@ const Navbar = ({ t }) => {
                 offset={-70}
                 duration={500}
               >
-                <NavItem>Sobre</NavItem>
+                <NavItem>{t('navbar:about')}</NavItem>
               </Link>
             </li>
             <li className="nav-item">
@@ -73,7 +74,7 @@ const Navbar = ({ t }) => {
                 offset={-70}
                 duration={500}
               >
-                <NavItem>Curriculo</NavItem>
+                <NavItem>{t('navbar:curriculum')}</NavItem>
               </Link>
             </li>
             <li className="nav-item">
@@ -85,7 +86,7 @@ const Navbar = ({ t }) => {
                 offset={-70}
                 duration={500}
               >
-                <NavItem>Contato</NavItem>
+                <NavItem>{t('navbar:contact')}</NavItem>
               </Link>
             </li>
           </ul>
@@ -95,4 +96,4 @@ const Navbar = ({ t }) => {
   );
 };
 
-export default  withTranslation()(Navbar);
+export default (Navbar);

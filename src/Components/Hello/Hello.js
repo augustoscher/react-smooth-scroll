@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import "./Hello.scss";
 import Icon from "../../Assets/Icons/icon-mouse.svg";
 import ReactRotatingText from "react-rotating-text";
@@ -21,11 +22,13 @@ const Name = styled.h1`
 `;
 
 const Hello = () => {
+  const { t } = useTranslation(['hello']);
+
   return (
     <Content>
       <CenterDiv>
         <span className="subheading" role="img" aria-label="Hello">
-          👋 Eu sou
+          👋 {t('hello:iam')}
         </span>
         <Name>Augusto Scher</Name>
         <div className="rotating-text">
