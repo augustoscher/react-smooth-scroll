@@ -10,6 +10,11 @@ const NavItem = styled.div`
   padding: 8px;
 `;
 
+const RightDiv = styled.div`
+  margin-left:auto;
+  margin-right:0;
+`;
+
 const items = [
   { sectionId: SECTION_TYPES.HELLO, translationKey: "navbar:welcome" },
   { sectionId: SECTION_TYPES.ABOUT, translationKey: "navbar:about" },
@@ -69,6 +74,7 @@ const Navbar = () => {
           }`}
         >
           <ul className="navbar-nav">{renderNav(t)}</ul>
+          <RightDiv><button>Pt</button></RightDiv>
         </div>
       </div>
     </nav>
