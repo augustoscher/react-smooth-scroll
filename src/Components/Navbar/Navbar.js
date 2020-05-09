@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import i18n from '../../i18n';
 
 import { Link } from "react-scroll";
 import SECTION_TYPES from "../../Constants/SectionType";
@@ -47,6 +48,10 @@ const Navbar = () => {
   const [collapsed, setCollapsed] = useState(false);
   const { t } = useTranslation(["translation", "navbar"]);
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
+
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
       <div className="container-fluid">
@@ -75,7 +80,8 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">{renderNav(t)}</ul>
           <RightDiv>
-            <button>Pt</button>
+            <button onClick={() => changeLanguage('pt')}>pt</button>
+            <button onClick={() => changeLanguage('en')}>en</button>
           </RightDiv>
         </div>
       </div>
