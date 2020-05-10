@@ -65,7 +65,7 @@ const renderNav = (t) => {
 };
 
 const Navbar = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const { t } = useTranslation(["translation", "navbar"]);
 
   const changeLanguage = (lng) => {
