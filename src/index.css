@@ -5,10 +5,6 @@
 body {
   /* margin: 0; */
   font-family: 'Poppins', sans-serif;
-  /* color: darken($secondary, 30%); */
-  /* line-height: 1.8; */
-  /* font-weight: 400; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
+  color: darken(--secondary, 30%);
   font-size: 16px;
 }
