@@ -29,10 +29,9 @@ const About = () => {
         <div className="row justify-content-start pb-3">
           <div className="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
             <h1 className="big">{t('about:title')}</h1>
-            <p>Sou Augusto Sulzbacher Scher,</p>
+            <p>{t('about:iam')} Augusto Sulzbacher Scher,</p>
             <p>
-              Atualmente trabalho remotamente como Software Engineer na
-              Resultados Digitais.
+              {t('about:job_description')}
             </p>
             <p>
               Gosto de quase tudo relacionado a tecnologia, desenvolvimento e
