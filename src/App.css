@@ -3,7 +3,7 @@
   --white: #fff;
   --black: #00010f;
   --darken: #00010f;
-
+  --text-color: #464961;
   --primary: #000AFF;
   --secondary: #9194AF;
   --tertiary: #FF3465;
@@ -15,8 +15,15 @@
 }
 
 body {
-  /* margin: 0; */
   font-family: 'Poppins', sans-serif;
-  color: darken(--secondary, 30%);
   font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  font-weight: 400;
 }
