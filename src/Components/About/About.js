@@ -19,7 +19,7 @@ const About = () => {
     <div className="row d-flex no-gutters">
       <div className="col-md-6 col-lg-6 d-flex">
         {/* <div className="img-about img d-flex align-items-stretch"> */}
-          {/* <div className="overlay"></div> */}
+          <div className="overlay"></div>
           <ImgThumnail
             alt="Augusto Scher"
           />
@@ -34,12 +34,11 @@ const About = () => {
               {t('about:job_description')}
             </p>
             <p>
-              Gosto de quase tudo relacionado a tecnologia, desenvolvimento e
-              arquitetura de software.
+              {t('about:like_description')}
             </p>
             <p>
-              Também me chama atenção trabalhar com processamento de grandes
-              quantidade de dados e com soluções que impactam grande número de
+              Data Science, Iot, arquitetura serverless e desenvolvimento frontend são assuntos que me interessam.
+              Também chama minha atenção trabalhar com processamento de grandes quantidade de dados e com soluções que impactam grande número de
               pessoas.
             </p>
           </div>

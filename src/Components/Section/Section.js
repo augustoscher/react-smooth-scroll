@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import './Section.css';
 import SECTION_TYPES from '../../Constants/SectionType';
 
@@ -14,13 +15,19 @@ const componentRelations = {
   [SECTION_TYPES.CONTACT]: Contact,
 };
 
+const SectionContent = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+`;
+
 const Section = ({ id, colored }) => {
   const Component = componentRelations[id];
   return (
     <div className={"section" + (colored ? " section-colored" : "")}>
-      <div className="section-content" id={id}>
+      <SectionContent id={id}>
         <Component />
-      </div>
+      </SectionContent>
     </div>
   );
 };
