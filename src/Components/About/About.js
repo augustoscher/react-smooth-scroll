@@ -37,9 +37,7 @@ const About = () => {
               {t('about:like_description')}
             </p>
             <p>
-              Data Science, Iot, arquitetura serverless e desenvolvimento frontend são assuntos que me interessam.
-              Também chama minha atenção trabalhar com processamento de grandes quantidade de dados e com soluções que impactam grande número de
-              pessoas.
+              {t('about:interest_description')}
             </p>
           </div>
         </div>

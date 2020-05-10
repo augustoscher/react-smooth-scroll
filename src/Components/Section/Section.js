@@ -18,7 +18,7 @@ const componentRelations = {
 const SectionContent = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 `;
 
 const Section = ({ id, colored }) => {
