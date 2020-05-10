@@ -16,6 +16,26 @@ const RightDiv = styled.div`
   margin-right: 0;
 `;
 
+const Button = styled.button`
+  cursor: pointer;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--black);
+  border: none;
+  padding: 8px;
+  outline: none;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+`;
+
 const items = [
   { sectionId: SECTION_TYPES.HELLO, translationKey: "navbar:welcome" },
   { sectionId: SECTION_TYPES.ABOUT, translationKey: "navbar:about" },
@@ -80,8 +100,8 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">{renderNav(t)}</ul>
           <RightDiv>
-            <button onClick={() => changeLanguage('pt')}>pt</button>
-            <button onClick={() => changeLanguage('en')}>en</button>
+            <Button onClick={() => changeLanguage('pt')}>pt</Button>
+            <Button onClick={() => changeLanguage('en')}>en</Button>
           </RightDiv>
         </div>
       </div>

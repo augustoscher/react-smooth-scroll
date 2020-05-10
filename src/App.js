@@ -12,6 +12,13 @@ const BodyContent = styled.div`
   padding-top: 100px;
 `;
 
+// const Footer = styled.footer`
+//   font-size: 12px;
+//   background: #00010f;
+//   padding: 2em 0 1em;
+//   z-index: 0;
+// `;
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +29,8 @@ function App() {
         <Section colored={true} id={SECTION_TYPES.CURRICULUM} />
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
+      {/* <Footer>
+      </Footer> */}
     </div>
   );
 }
