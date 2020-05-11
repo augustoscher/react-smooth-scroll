@@ -4,3 +4,48 @@ Pellentesque id nibh tortor id aliquet lectus proin. Blandit cursus risus at ult
 Odio aenean sed adipiscing diam. Volutpat ac tincidunt vitae semper quis lectus.`;
 
 export default dummyText;
+
+
+// <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+// <div class="align-self-stretch box text-center p-4 shadow">
+//   <div class="icon d-flex align-items-center justify-content-center">
+//     <a href="https://github.com/augustoscher" target="_blank"><img src="images/icons/icon-github.svg"></a>
+//   </div>
+//   <div>
+//     <h3 class="mb-0"><a href="https://github.com/augustoscher" target="_blank">@augustoscher</a></h3>
+//   </div>
+// </div>
+// </div>
+
+// <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+// <div class="align-self-stretch box text-center p-4 shadow">
+//   <div class="icon d-flex align-items-center justify-content-center">
+//     <a href="https://www.linkedin.com/in/augusto-scher/" target="_blank"><img src="images/icons/icon-linkedin.svg"></a>
+//   </div>
+//   <div>
+//     <h3 class="mb-0"><a href="https://www.linkedin.com/in/augusto-scher/" target="_blank">@augusto-scher</a></h3>
+//   </div>
+// </div>
+// </div>
+
+// <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+// <div class="align-self-stretch box text-center p-4 shadow">
+//   <div class="icon d-flex align-items-center justify-content-center">
+//     <a href="https://www.facebook.com/augusto.scher" target="_blank"><img src="images/icons/icon-facebook.svg"></a>
+//   </div>
+//   <div>
+//     <h3 class="mb-0"><a href="https://www.facebook.com/augusto.scher" target="_blank">@augusto.scher</a></h3>
+//   </div>
+// </div>
+// </div>
+
+// <div class="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+// <div class="align-self-stretch box text-center p-4 shadow">
+//   <div class="icon d-flex align-items-center justify-content-center">
+//     <a href="https://twitter.com/augustoschergm1" target="_blank"><img src="images/icons/icon-twitter.svg"></a>
+//   </div>
+//   <div>
+//     <h3 class="mb-0"><a href="https://twitter.com/augustoschergm1" target="_blank">augustoschergm1</a></h3>
+//   </div>
+// </div>
+// </div>
