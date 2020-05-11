@@ -1,9 +1,9 @@
 import React from "react";
-// import styled from "styled-components";
+import styled from "styled-components";
 import { useTranslation } from 'react-i18next';
 import Icon from "../../Assets/Icons/icon-github.svg";
 
-import Title from './Title/Title';
+import Title from '../Title/Title';
 
 
 // const ImgDiv = styled.div`
@@ -29,12 +29,24 @@ import Title from './Title/Title';
 //   text-align: center!important;
 // `;
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+`;
+
+
 const Contact = () => {
   const { t } = useTranslation(['contact']);
 
   return (
     <>
-      <Title title={t('contact:title')} />
+      <Content>
+        <Title title={t('contact:title')} />
+      </Content>
       <div className="row d-flex contact-info mb-5">
         <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
           <div className="align-self-stretch box text-center p-4 shadow">
