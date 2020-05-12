@@ -16,6 +16,8 @@ const Footer = styled.footer`
   font-size: 12px;
   background: #00010f;
   padding: 2em 0 1em;
+  padding: 15px 10px;
+  min-height: 70px;
   z-index: 0;
 `;
 
@@ -30,6 +32,7 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>
+        Augusto Scher
       </Footer>
     </div>
   );
