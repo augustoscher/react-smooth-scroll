@@ -13,7 +13,7 @@ const BodyContent = styled.div`
 `;
 
 const Footer = styled.footer`
-  font-size: 12px;
+  font-size: 16px;
   background: #00010f;
   padding: 2em 0 1em;
   padding: 15px 10px;
