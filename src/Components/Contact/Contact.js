@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import github from "../../Assets/Icons/icon-github.svg";
-import linkedin from "../../Assets/Icons/icon-linkedin.svg";
-import facebook from "../../Assets/Icons/icon-facebook.svg";
-import twitter from "../../Assets/Icons/icon-twitter.svg";
 
+import cardItems from './cardItems';
 import Title from "../Title/Title";
 import Card from "./Card/Card";
 
@@ -18,6 +15,8 @@ const Content = styled.div`
   margin-top: 100px;
 `;
 
+const renderCards = (item, id) => <Card key={id} icon={item.icon} link={item.src} label={item.label} />
+
 const Contact = () => {
   const { t } = useTranslation(["contact"]);
 
@@ -27,10 +26,7 @@ const Contact = () => {
         <Title title={t("contact:title")} />
       </Content>
       <div className="row d-flex contact-info mb-5">
-        <Card icon={github} label="@augustoscher" />
-        <Card icon={linkedin} label="@augusto-scher" />
-        <Card icon={facebook} label="@augusto.scher" />
-        <Card icon={twitter} label="@augustoschergm1" />
+        {cardItems.map((item, idx)=> renderCards(item, idx))}
       </div>
     </div>
   );

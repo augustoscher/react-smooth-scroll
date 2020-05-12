@@ -21,9 +21,8 @@ const Img = styled.img`
 const Text = styled.h3`
   font-size: 16px;
   font-weight: 350;
-  margin-bottom: 0;
   line-height: 1.5;
-  color: #00010f;
+  margin-bottom: 0;
 `;
 
 const Div = styled.div`
@@ -32,13 +31,17 @@ const Div = styled.div`
   border-radius: 4px;
 `;
 
+const A = styled.a`
+  color: #000AFF;
+`;
+
 const Card = ({ icon, link, label }) => {
   return (
     <div className="col-md-6 col-lg-3 d-flex ftco-animate">
       <Div className="align-self-stretch box text-center p-4 shadow">
         <DivImg className="align-items-center justify-content-center">
           <a
-            href="https://github.com/augustoscher"
+            href={link}
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -47,13 +50,13 @@ const Card = ({ icon, link, label }) => {
         </DivImg>
         <div>
           <Text>
-            <a
-              href="https://github.com/augustoscher"
+            <A
+              href={link}
               rel="noopener noreferrer"
               target="_blank"
             >
               {label}
-            </a>
+            </A>
           </Text>
         </div>
       </Div>
