@@ -1,79 +1,38 @@
 import React from "react";
 import styled from "styled-components";
-import { useTranslation } from 'react-i18next';
-import Icon from "../../Assets/Icons/icon-github.svg";
+import { useTranslation } from "react-i18next";
+import github from "../../Assets/Icons/icon-github.svg";
+import linkedin from "../../Assets/Icons/icon-linkedin.svg";
+import facebook from "../../Assets/Icons/icon-facebook.svg";
+import twitter from "../../Assets/Icons/icon-twitter.svg";
 
-import Title from '../Title/Title';
-
-
-// const ImgDiv = styled.div`
-//   width: 60px;
-//   height: 60px;
-//   background: #000aff;
-//   background-image: initial;
-//   background-position-x: initial;
-//   background-position-y: initial;
-//   background-size: initial;
-//   background-repeat-x: initial;
-//   background-repeat-y: initial;
-//   background-attachment: initial;
-//   background-origin: initial;
-//   background-clip: initial;
-//   background-color: rgb(0, 10, 255);
-//   margin: 0 auto;
-//   margin-bottom: 10px;
-//   border-radius: 50%;
-//   align-items: center!important;
-//   justify-content: center!important;
-//   display: flex!important;
-//   text-align: center!important;
-// `;
+import Title from "../Title/Title";
+import Card from "./Card/Card";
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 100px;
 `;
 
-
 const Contact = () => {
-  const { t } = useTranslation(['contact']);
+  const { t } = useTranslation(["contact"]);
 
   return (
-    <>
+    <div className="container">
       <Content>
-        <Title title={t('contact:title')} />
+        <Title title={t("contact:title")} />
       </Content>
       <div className="row d-flex contact-info mb-5">
-        <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
-          <div className="align-self-stretch box text-center p-4 shadow">
-            <div className="icon d-flex align-items-center justify-content-center">
-              <a
-                href="https://github.com/augustoscher"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img src={Icon} alt="github" />
-              </a>
-            </div>
-            <div>
-              <h3 className="mb-0">
-                <a
-                  href="https://github.com/augustoscher"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  @augustoscher
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
+        <Card icon={github} label="@augustoscher" />
+        <Card icon={linkedin} label="@augusto-scher" />
+        <Card icon={facebook} label="@augusto.scher" />
+        <Card icon={twitter} label="@augustoschergm1" />
       </div>
-    </>
+    </div>
   );
 };
 
