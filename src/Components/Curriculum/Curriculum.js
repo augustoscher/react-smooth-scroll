@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import dummyText from "../DummyText";
@@ -22,6 +22,19 @@ const RightPanel = styled.div`
   margin: auto;
 `;
 
+const Li = styled.li`
+  list-style: none;
+  color: var(--black);
+  font-weight: 800;
+  font-size: 18px;
+  opacity: 1!important;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+`
+
 const Curriculum = () => {
   const { t } = useTranslation(["curriculum"]);
 
@@ -31,7 +44,7 @@ const Curriculum = () => {
       <Container>
         <LeftPanel>
           <ul>
-            <li className="nav-item">
+            <Li>
               <Link
                 activeClass="active"
                 to={"test1"}
@@ -42,8 +55,8 @@ const Curriculum = () => {
               >
                 Interesses
               </Link>
-            </li>
-            <li>
+            </Li>
+            <Li>
               <Link
                 activeClass="active"
                 to={"test2"}
@@ -54,9 +67,9 @@ const Curriculum = () => {
               >
                 Educação
               </Link>
-            </li>
-            <li>Experiência</li>
-            <li>Certificados e Licenças</li>
+            </Li>
+            <Li>Experiência</Li>
+            <Li>Certificados e Licenças</Li>
           </ul>
         </LeftPanel>
         <RightPanel>
@@ -68,6 +81,27 @@ const Curriculum = () => {
             <h1>Educação</h1>
             {dummyText}
           </div>
+{/* 
+          <Element
+            name="test7"
+            className="element"
+            id="containerElement"
+            style={{
+              height: "1000px",
+              overflow: "scroll",
+              marginBottom: "100px",
+            }}
+          >
+            <Element name="test1">
+              <h1>Interesses</h1>
+              {dummyText}
+            </Element>
+
+            <Element name="test2">
+              <h1>Educação</h1>
+              {dummyText}
+            </Element>
+          </Element> */}
         </RightPanel>
       </Container>
     </>
