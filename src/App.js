@@ -6,6 +6,7 @@ import './i18n';
 import styled from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
 import Section from "./Components/Section/Section";
+import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCurriculum';
 import SECTION_TYPES from "./Constants/SectionType";
 
 const BodyContent = styled.div`
@@ -28,7 +29,7 @@ function App() {
       <BodyContent>
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
-        <Section colored={true} id={SECTION_TYPES.CURRICULUM} />
+        <SectionCurriculum colored={true} id={SECTION_TYPES.CURRICULUM}/>
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>

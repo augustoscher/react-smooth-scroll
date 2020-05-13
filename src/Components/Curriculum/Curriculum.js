@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, Element } from "react-scroll";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import dummyText from "../DummyText";
 
-import Title from "../Title/Title";
+// import Title from "../Title/Title";
 
 const Container = styled.div`
   border: solid;

@@ -1,19 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import './Section.css';
-import SECTION_TYPES from '../../Constants/SectionType';
 
-import Hello from '../Hello/Hello';
-import About from '../About/About';
-import Curriculum from '../Curriculum/Curriculum';
-import Contact from '../Contact/Contact'
-
-const componentRelations = {
-  [SECTION_TYPES.HELLO]: Hello,
-  [SECTION_TYPES.ABOUT]: About,
-  [SECTION_TYPES.CURRICULUM]: Curriculum,
-  [SECTION_TYPES.CONTACT]: Contact,
-};
+import componentRelations from './componentsRelations';
 
 const SectionContent = styled.div`
   max-width: 1000px;
