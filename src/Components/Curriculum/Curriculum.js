@@ -72,7 +72,7 @@ const Curriculum = () => {
                 offset={-70}
                 duration={500}
               >
-                Educação
+                {t("curriculum:education")}
               </Link>
             </Li>
             <Li>
@@ -85,7 +85,7 @@ const Curriculum = () => {
                 offset={-70}
                 duration={500}
               >
-                Experiência
+                {t("curriculum:experience")}
               </Link>
             </Li>
             <Li>
@@ -98,7 +98,7 @@ const Curriculum = () => {
                 offset={-70}
                 duration={500}
               >
-                Certificados e Licenças
+                {t("curriculum:licenses")}
               </Link>
             </Li>
           </ul>

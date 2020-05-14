@@ -1,3 +1,6 @@
 {
-  "interests": "Interests"
+  "interests": "Interests",
+  "education": "Education",
+  "experience": "Experience",
+  "licenses": "Licenses"
 }
