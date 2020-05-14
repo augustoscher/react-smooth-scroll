@@ -9,6 +9,8 @@ import Section from "./Components/Section/Section";
 import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCurriculum';
 import SECTION_TYPES from "./Constants/SectionType";
 
+
+
 const BodyContent = styled.div`
   padding-top: 100px;
 `;
@@ -30,6 +32,9 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
         <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
+        <div style={{ height: 100, backgroundColor: '#9194AF', margin: 10}}>
+
+        </div>
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>
