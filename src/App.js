@@ -29,7 +29,7 @@ function App() {
       <BodyContent>
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
-        <SectionCurriculum colored={true} id={SECTION_TYPES.CURRICULUM}/>
+        <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>

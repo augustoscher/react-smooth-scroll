@@ -7,7 +7,8 @@ import dummyText from "../DummyText";
 // import Title from "../Title/Title";
 
 const Container = styled.div`
-  border: solid;
+  margin: 0px 30px;
+  // border: solid;
   height: 100%;
   display: flex;
   justify-content: flex-start;
@@ -15,7 +16,8 @@ const Container = styled.div`
 
 const LeftPanel = styled.div`
   width: 25%;
-  height: 300px;
+  margin: 10px;
+  padding-top: 40px;
 `;
 
 const RightPanel = styled.div`
@@ -32,18 +34,16 @@ const Li = styled.li`
   &:hover {
     color: var(--primary);
   }
-
-`
+`;
 
 const Curriculum = () => {
   const { t } = useTranslation(["curriculum"]);
 
   return (
     <>
-      {/* <Title title={t("curriculum:title")} /> */}
       <Container>
         <LeftPanel>
-          <ul>
+          <ul style={{padding: 0}}>
             <Li>
               <Link
                 activeClass="active"
@@ -53,7 +53,7 @@ const Curriculum = () => {
                 offset={-70}
                 duration={500}
               >
-                Interesses
+                {t('curriculum:interests')}
               </Link>
             </Li>
             <Li>
@@ -74,7 +74,7 @@ const Curriculum = () => {
         </LeftPanel>
         <RightPanel>
           <div id="test1">
-            <h1>Interesses</h1>
+            <h1>{t('curriculum:interests')}</h1>
             {dummyText}
           </div>
           <div id="test2">

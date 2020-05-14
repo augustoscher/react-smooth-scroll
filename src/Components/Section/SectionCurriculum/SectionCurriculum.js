@@ -5,8 +5,8 @@ import componentRelations from "../componentsRelations";
 
 const Content = styled.div`
   // max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin: 10px;
+  // padding: 30px 20px;
 `;
 
 const SectionCurriculum = ({ id, colored }) => {
