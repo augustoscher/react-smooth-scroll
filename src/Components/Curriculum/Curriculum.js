@@ -29,7 +29,7 @@ const Li = styled.li`
   color: var(--black);
   font-weight: 800;
   font-size: 18px;
-  opacity: 1!important;
+  opacity: 1 !important;
   margin-bottom: 5px;
 
   &:hover {
@@ -53,7 +53,7 @@ const Curriculum = () => {
               <Link
                 activeClass="active"
                 containerId="containerElement"
-                to={"test1"}
+                to={"interest"}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -66,7 +66,7 @@ const Curriculum = () => {
               <Link
                 activeClass="active"
                 containerId="containerElement"
-                to={"test2"}
+                to={"education"}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -75,8 +75,32 @@ const Curriculum = () => {
                 Educação
               </Link>
             </Li>
-            <Li>Experiência</Li>
-            <Li>Certificados e Licenças</Li>
+            <Li>
+              <Link
+                activeClass="active"
+                containerId="containerElement"
+                to={"experience"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Experiência
+              </Link>
+            </Li>
+            <Li>
+              <Link
+                activeClass="active"
+                containerId="containerElement"
+                to={"licenses"}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Certificados e Licenças
+              </Link>
+            </Li>
           </ul>
         </LeftPanel>
         <RightPanel>
@@ -88,22 +112,27 @@ const Curriculum = () => {
               position: "relative",
               height: "600px",
               overflow: "auto",
-            }}>
-            <Element name="test1" style={{ marginTop: 40 }}>
+              webkitScrollbar: {
+                width: 0,
+                background: 'transparent',
+              }
+            }}
+          >
+            <Element name="interest" style={{ marginTop: 40 }}>
               <h1>{t("curriculum:interests")}</h1>
               {dummyText}
             </Element>
-            <Element name="test2" style={{ marginTop: 40 }}>
+            <Element name="education" style={{ marginTop: 40 }}>
               <h1>Educação</h1>
               {dummyText}
             </Element>
-            <Element name="test3" style={{ marginTop: 40 }}>
+            <Element name="experience" style={{ marginTop: 40 }}>
               <h1>Experiência</h1>
               <p>Oi</p>
               <p>Oi</p>
             </Element>
-            <Element name="test4" style={{ marginTop: 40 }}>
-              <h1>Certificados</h1>
+            <Element name="licenses" style={{ marginTop: 40 }}>
+              <h1>Certificados e Licenças</h1>
               <p>Oi</p>
               <p>Oi</p>
             </Element>
