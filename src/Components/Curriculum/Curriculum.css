@@ -1,0 +1,10 @@
+.element {
+  position: "relative";
+  height: "600px";
+  overflow: "scroll";
+}
+
+/* .containerContent > -webkit-scrollbar {
+  width: 0px;
+  background: transparent; 
+} */

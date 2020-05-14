@@ -104,18 +104,18 @@ const Curriculum = () => {
           </ul>
         </LeftPanel>
         <RightPanel>
-          <Element
+          <Element 
             name="containerElement"
-            className="element"
+            className="element containerContent"
             id="containerElement"
             style={{
               position: "relative",
               height: "600px",
               overflow: "auto",
-              webkitScrollbar: {
-                width: 0,
-                background: 'transparent',
-              }
+              // webkitScrollbar: {
+              //   width: 0,
+              //   background: 'transparent',
+              // }
             }}
           >
             <Element name="interest" style={{ marginTop: 40 }}>
