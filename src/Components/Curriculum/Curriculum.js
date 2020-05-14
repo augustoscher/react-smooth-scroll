@@ -123,16 +123,16 @@ const Curriculum = () => {
               {dummyText}
             </Element>
             <Element name="education" style={{ marginTop: 40 }}>
-              <h1>Educação</h1>
+              <h1>{t("curriculum:education")}</h1>
               {dummyText}
             </Element>
             <Element name="experience" style={{ marginTop: 40 }}>
-              <h1>Experiência</h1>
+              <h1>{t("curriculum:experience")}</h1>
               <p>Oi</p>
               <p>Oi</p>
             </Element>
             <Element name="licenses" style={{ marginTop: 40 }}>
-              <h1>Certificados e Licenças</h1>
+              <h1>{t("curriculum:licenses")}</h1>
               <p>Oi</p>
               <p>Oi</p>
             </Element>
