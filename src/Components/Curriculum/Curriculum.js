@@ -87,7 +87,7 @@ const Curriculum = () => {
             style={{
               position: "relative",
               height: "600px",
-              overflow: "scroll",
+              overflow: "auto",
             }}>
             <Element name="test1" style={{ marginTop: 40 }}>
               <h1>{t("curriculum:interests")}</h1>
