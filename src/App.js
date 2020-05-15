@@ -32,8 +32,8 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
         <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
-        <div style={{ height: 100, backgroundColor: '#9194AF', margin: 10}}>
-
+        <div style={{ height: 200, backgroundColor: '#9194AF', margin: 10}}>
+          Download
         </div>
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
