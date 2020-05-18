@@ -7,9 +7,8 @@ import styled from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
 import Section from "./Components/Section/Section";
 import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCurriculum';
+import CvDownload from './Components/CvDownload/CvDownload';
 import SECTION_TYPES from "./Constants/SectionType";
-
-
 
 const BodyContent = styled.div`
   padding-top: 100px;
@@ -24,12 +23,6 @@ const Footer = styled.footer`
   z-index: 0;
 `;
 
-const Download = styled.div`
-  height: 200px;
-  background: #9194AF;
-  margin: 10px;
-`;
-
 function App() {
   return (
     <div className="App">
@@ -38,9 +31,9 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
         <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
-        <Download>
+        <CvDownload>
           Download
-        </Download>
+        </CvDownload>
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>
