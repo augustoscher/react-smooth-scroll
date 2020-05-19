@@ -17,10 +17,10 @@ const BodyContent = styled.div`
 const Footer = styled.footer`
   font-size: 16px;
   background: #00010f;
-  padding: 2em 0 1em;
-  padding: 15px 10px;
+  padding-top: 20px;
   min-height: 70px;
   z-index: 0;
+  text-align: center; 
 `;
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>
-        Augusto Scher
+        <p>Copyright © 2020 by Augusto Scher</p>
       </Footer>
     </div>
   );
