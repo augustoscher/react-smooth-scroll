@@ -1,7 +1,8 @@
 import React from "react";
-import ListItem from './ListItem/ListItem';
-import { Element } from "react-scroll";
 import styled from "styled-components";
+import ListItem from './ListItem/ListItem';
+import ElementItem from './ElementItem/ElementItem';
+import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import dummyText from "../DummyText";
 
@@ -52,24 +53,24 @@ const Curriculum = () => {
               // }
             }}
           >
-            <Element name="interest" style={{ marginTop: 40 }}>
+            <ElementItem name="interest">
               <h1>{t("curriculum:interests")}</h1>
               {dummyText}
-            </Element>
-            <Element name="education" style={{ marginTop: 40 }}>
+            </ElementItem>
+            <ElementItem name="education">
               <h1>{t("curriculum:education")}</h1>
               {dummyText}
-            </Element>
-            <Element name="experience" style={{ marginTop: 40 }}>
+            </ElementItem>
+            <ElementItem name="experience">
               <h1>{t("curriculum:experience")}</h1>
               <p>Oi</p>
               <p>Oi</p>
-            </Element>
-            <Element name="licenses" style={{ marginTop: 40 }}>
+            </ElementItem>
+            <ElementItem name="licenses">
               <h1>{t("curriculum:licenses")}</h1>
               <p>Oi</p>
               <p>Oi</p>
-            </Element>
+            </ElementItem>
           </Element>
         </RightPanel>
       </Container>
