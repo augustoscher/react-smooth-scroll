@@ -9,9 +9,13 @@ const Content = styled.div`
   margin-right: 5px!important;
 `;
 
+const Title = styled.h1`
+  color: var(--primary);
+`;
+
 const Interest = ({ title }) => (
   <>
-    <h1>{title}</h1>
+    <Title>{title}</Title>
     <p>Tenho interesse, principalmente em stacks como:</p>
     <Content className="row mb-2">
       <InterestCard title="Node.js" />
