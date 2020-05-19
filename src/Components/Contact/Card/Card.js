@@ -9,6 +9,10 @@ const DivImg = styled.div`
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 50%;
+
+  &:hover {
+    background: var(--dark);
+  }
 `;
 
 const Img = styled.img`
