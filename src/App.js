@@ -31,9 +31,7 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
         <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
-        <CvDownload>
-          Download
-        </CvDownload>
+        <CvDownload />
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>
