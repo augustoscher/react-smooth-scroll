@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import dummyText from "../DummyText";
 
 const Container = styled.div`
-  margin: 0px 30px;
+  margin: 0px 10px;
   // border: solid;
   height: 100%;
   display: flex;
@@ -55,9 +55,9 @@ const Curriculum = () => {
             }}
           >
             <ElementItem name="interest">
-              {/* <Interest title={t("curriculum:interests")} /> */}
-              <h1>{t("curriculum:interests")}</h1>
-              {dummyText}
+              <Interest title={t("curriculum:interests")} />
+              {/* <h1>{t("curriculum:interests")}</h1> */}
+              {/* {dummyText} */}
             </ElementItem>
             <ElementItem name="education">
               <h1>{t("curriculum:education")}</h1>

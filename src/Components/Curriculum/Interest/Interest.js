@@ -1,15 +1,15 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import InterestCard from './InterestCard/InterestCard';
 
-const Content = styled.div`
+// const Content = styled.div`
   // padding: 30px;
-`;
+// `;
 
 const Interest = ({ title }) => (
   <>
     <h1>{title}</h1>
-    <p>Tenho interesse, principalmente em stacks como:</p>
+    {/* <p>Tenho interesse, principalmente em stacks como:</p> */}
     <div className="row mb-2">
       <InterestCard title="Node.js" />
       <InterestCard title="Golang" />
