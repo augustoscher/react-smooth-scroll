@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, Element } from "react-scroll";
+import ListItem from './ListItem/ListItem';
+import { Element } from "react-scroll";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import dummyText from "../DummyText";
-
-// import Title from "../Title/Title";
 
 const Container = styled.div`
   margin: 0px 30px;
@@ -24,23 +23,6 @@ const RightPanel = styled.div`
   margin: auto;
 `;
 
-const Li = styled.li`
-  list-style: none;
-  color: var(--black);
-  font-weight: 800;
-  font-size: 18px;
-  opacity: 1 !important;
-  margin-bottom: 5px;
-
-  &:hover {
-    color: var(--primary);
-  }
-
-  .active {
-    color: var(--primary);
-  }
-`;
-
 const Curriculum = () => {
   const { t } = useTranslation(["curriculum"]);
 
@@ -49,58 +31,10 @@ const Curriculum = () => {
       <Container>
         <LeftPanel>
           <ul style={{ padding: 0, minWidth: 250 }}>
-            <Li>
-              <Link
-                activeClass="active"
-                containerId="containerElement"
-                to={"interest"}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {t("curriculum:interests")}
-              </Link>
-            </Li>
-            <Li>
-              <Link
-                activeClass="active"
-                containerId="containerElement"
-                to={"education"}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {t("curriculum:education")}
-              </Link>
-            </Li>
-            <Li>
-              <Link
-                activeClass="active"
-                containerId="containerElement"
-                to={"experience"}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {t("curriculum:experience")}
-              </Link>
-            </Li>
-            <Li>
-              <Link
-                activeClass="active"
-                containerId="containerElement"
-                to={"licenses"}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {t("curriculum:licenses")}
-              </Link>
-            </Li>
+            <ListItem tittle={t("curriculum:interests")} to="interest" />
+            <ListItem tittle={t("curriculum:education")} to="education" />
+            <ListItem tittle={t("curriculum:experience")} to="experience" />
+            <ListItem tittle={t("curriculum:licenses")} to="licenses" />
           </ul>
         </LeftPanel>
         <RightPanel>
