@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ListItem from './ListItem/ListItem';
+import Interest from './Interest/Interest';
 import ElementItem from './ElementItem/ElementItem';
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
@@ -54,6 +55,7 @@ const Curriculum = () => {
             }}
           >
             <ElementItem name="interest">
+              {/* <Interest title={t("curriculum:interests")} /> */}
               <h1>{t("curriculum:interests")}</h1>
               {dummyText}
             </ElementItem>
