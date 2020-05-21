@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import ListItem from './ListItem/ListItem';
 import Interest from './Interest/Interest';
 import ElementItem from './ElementItem/ElementItem';
-import { Element } from "react-scroll";
-import { useTranslation } from "react-i18next";
-import dummyText from "../DummyText";
+import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 
 const Container = styled.div`
   margin: 0px 10px;
-  // border: solid;
   height: 100%;
   display: flex;
   justify-content: flex-start;
 `;
 
 const LeftPanel = styled.div`
-  width: 35%;
-  margin: 10px;
-  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
 `;
 
 const RightPanel = styled.div`
@@ -27,12 +26,33 @@ const RightPanel = styled.div`
 
 const Curriculum = () => {
   const { t } = useTranslation(["curriculum"]);
+  const [professionalData, setProfessionalData] = useState(null);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const getData = async () => {
+      const results = await fetchProfessionalData();
+      if (mounted) {
+        setProfessionalData(results);
+      }
+    };
+
+    getData();
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  if (!professionalData) {
+    return <div></div>;
+  }
 
   return (
     <>
       <Container>
         <LeftPanel>
-          <ul style={{ padding: 0, minWidth: 250 }}>
+          <ul>
             <ListItem tittle={t("curriculum:interests")} to="interest" />
             <ListItem tittle={t("curriculum:education")} to="education" />
             <ListItem tittle={t("curriculum:experience")} to="experience" />
@@ -56,22 +76,36 @@ const Curriculum = () => {
           >
             <ElementItem name="interest">
               <Interest title={t("curriculum:interests")} />
-              {/* <h1>{t("curriculum:interests")}</h1> */}
-              {/* {dummyText} */}
             </ElementItem>
             <ElementItem name="education">
               <h1>{t("curriculum:education")}</h1>
-              {dummyText}
+              {professionalData.map((prof, idx) => (
+                <div id={idx}>
+                  {prof.graduations.map((grad, id) => (
+                    <p id={id}>{grad.name}</p>
+                  ))}
+                </div>
+              ))}
             </ElementItem>
             <ElementItem name="experience">
               <h1>{t("curriculum:experience")}</h1>
-              <p>Oi</p>
-              <p>Oi</p>
+              {professionalData.map((prof, idx) => (
+                <div id={idx}>
+                  {prof.experiences.map((grad, id) => (
+                    <p id={id}>{grad.name}</p>
+                  ))}
+                </div>
+              ))}
             </ElementItem>
             <ElementItem name="licenses">
               <h1>{t("curriculum:licenses")}</h1>
-              <p>Oi</p>
-              <p>Oi</p>
+              {professionalData.map((prof, idx) => (
+                <div id={idx}>
+                  {prof.licenses.map((grad, id) => (
+                    <p id={id}>{grad.name}</p>
+                  ))}
+                </div>
+              ))}
             </ElementItem>
           </Element>
         </RightPanel>
