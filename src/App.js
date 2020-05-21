@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import './i18n';
 import styled from "styled-components";
@@ -10,7 +10,8 @@ import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCur
 import CvDownload from './Components/CvDownload/CvDownload';
 import SECTION_TYPES from "./Constants/SectionType";
 
-import fetchProfessionalData from "./Services/fetchProfessionalInfo";
+// import fetchProfessionalData from "./Services/fetchProfessionalInfo";
+import postVisits from "./Services/postVisits";
 
 const BodyContent = styled.div`
   padding-top: 100px;
@@ -26,6 +27,19 @@ const Footer = styled.footer`
 `;
 
 function App() {
+  const [sended, setSended] = useState(null);
+
+  useEffect(() => { 
+    const send = () => { 
+      postVisits();
+      setSended(true)
+    };
+
+    if (sended === null) {
+      send();
+    }
+  });
+
   return (
     <div className="App">
       <Navbar />
