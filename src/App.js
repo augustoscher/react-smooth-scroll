@@ -10,6 +10,8 @@ import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCur
 import CvDownload from './Components/CvDownload/CvDownload';
 import SECTION_TYPES from "./Constants/SectionType";
 
+import fetchProfessionalData from "./Services/fetchProfessionalInfo";
+
 const BodyContent = styled.div`
   padding-top: 100px;
 `;
