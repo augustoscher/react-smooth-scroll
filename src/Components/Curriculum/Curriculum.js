@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import ListItem from './ListItem/ListItem';
-import Interest from './Interest/Interest';
 import ElementItem from './ElementItem/ElementItem';
+import Interest from './Interest/Interest';
+import Education from './Education/Education';
 import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 
 const Container = styled.div`
@@ -78,14 +79,7 @@ const Curriculum = () => {
               <Interest title={t("curriculum:interests")} />
             </ElementItem>
             <ElementItem name="education">
-              <h1>{t("curriculum:education")}</h1>
-              {professionalData.map((prof, idx) => (
-                <div id={idx}>
-                  {prof.graduations.map((grad, id) => (
-                    <p id={id}>{grad.name}</p>
-                  ))}
-                </div>
-              ))}
+              <Education title={t("curriculum:education")} professionalData={professionalData} />
             </ElementItem>
             <ElementItem name="experience">
               <h1>{t("curriculum:experience")}</h1>

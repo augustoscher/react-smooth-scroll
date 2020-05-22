@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InterestCard from './InterestCard/InterestCard';
+import TitleItem from '../TitleItem/TitleItem';
 
 const Content = styled.div`
   display: flex;
@@ -9,13 +10,9 @@ const Content = styled.div`
   margin-right: 5px!important;
 `;
 
-const Title = styled.h1`
-  color: var(--primary);
-`;
-
 const Interest = ({ title }) => (
   <>
-    <Title>{title}</Title>
+    <TitleItem title={title} />
     <p>Tenho interesse, principalmente em stacks como:</p>
     <Content className="row mb-2">
       <InterestCard title="Node.js" />
