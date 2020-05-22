@@ -1,6 +1,6 @@
 .element {
   position: "relative";
-  height: "600px";
+  /* height: "600px"; */
   overflow: "scroll";
 }
 

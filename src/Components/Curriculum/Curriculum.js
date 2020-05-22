@@ -25,6 +25,17 @@ const RightPanel = styled.div`
   padding-right: 0px;
 `;
 
+const ElementStyle = {
+  position: "relative",
+  height: "650px",
+  overflow: "auto",
+  paddingTop: "30px"
+  // webkitScrollbar: {
+  //   width: 0,
+  //   background: 'transparent',
+  // }
+}
+
 const Curriculum = () => {
   const { t } = useTranslation(["curriculum"]);
   const [professionalData, setProfessionalData] = useState(null);
@@ -63,18 +74,9 @@ const Curriculum = () => {
         <RightPanel className="col-xs-12 col-md-9">
           <Element 
             name="containerElement"
-            className="element containerContent"
+            className="containerContent"
             id="containerElement"
-            style={{
-              position: "relative",
-              height: "600px",
-              overflow: "auto",
-              // webkitScrollbar: {
-              //   width: 0,
-              //   background: 'transparent',
-              // }
-            }}
-          >
+            style={ElementStyle}>
             <ElementItem name="interest">
               <Interest title={t("curriculum:interests")} message={t("curriculum:interested_subjects")} />
             </ElementItem>
