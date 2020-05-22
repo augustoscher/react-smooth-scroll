@@ -10,14 +10,12 @@ import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 const Container = styled.div`
   margin: 0px 10px;
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
 `;
 
 const LeftPanel = styled.div`
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 40px;
 `;
 
 const RightPanel = styled.div`
@@ -50,8 +48,8 @@ const Curriculum = () => {
 
   return (
     <>
-      <Container>
-        <LeftPanel>
+      <Container className="row">
+        <LeftPanel className="col-xs-6 col-md-3">
           <ul>
             <ListItem tittle={t("curriculum:interests")} to="interest" />
             <ListItem tittle={t("curriculum:education")} to="education" />
@@ -59,7 +57,7 @@ const Curriculum = () => {
             <ListItem tittle={t("curriculum:licenses")} to="licenses" />
           </ul>
         </LeftPanel>
-        <RightPanel>
+        <RightPanel className="col-xs-12 col-md-9">
           <Element 
             name="containerElement"
             className="element containerContent"
