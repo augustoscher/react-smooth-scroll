@@ -76,7 +76,7 @@ const Curriculum = () => {
             }}
           >
             <ElementItem name="interest">
-              <Interest title={t("curriculum:interests")} />
+              <Interest title={t("curriculum:interests")} message={t("curriculum:interested_subjects")} />
             </ElementItem>
             <ElementItem name="education">
               <Education title={t("curriculum:education")} professionalData={professionalData} />
