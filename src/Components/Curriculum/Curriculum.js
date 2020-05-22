@@ -6,6 +6,8 @@ import ListItem from './ListItem/ListItem';
 import ElementItem from './ElementItem/ElementItem';
 import Interest from './Interest/Interest';
 import Education from './Education/Education';
+import Experience from './Experience/Experience';
+import License from './License/License';
 import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 
 const Container = styled.div`
@@ -81,27 +83,13 @@ const Curriculum = () => {
               <Interest title={t("curriculum:interests")} message={t("curriculum:interested_subjects")} />
             </ElementItem>
             <ElementItem name="education">
-              <Education title={t("curriculum:education")} professionalData={professionalData} />
+              <Education title={t("curriculum:education")} graduations={professionalData[0].graduations} />
             </ElementItem>
             <ElementItem name="experience">
-              <h1>{t("curriculum:experience")}</h1>
-              {professionalData.map((prof, idx) => (
-                <div id={idx}>
-                  {prof.experiences.map((grad, id) => (
-                    <p id={id}>{grad.name}</p>
-                  ))}
-                </div>
-              ))}
+              <Experience title={t("curriculum:experience")} experiences={professionalData[0].experiences} />
             </ElementItem>
             <ElementItem name="licenses">
-              <h1>{t("curriculum:licenses")}</h1>
-              {professionalData.map((prof, idx) => (
-                <div id={idx}>
-                  {prof.licenses.map((grad, id) => (
-                    <p id={id}>{grad.name}</p>
-                  ))}
-                </div>
-              ))}
+              <License title={t("curriculum:licenses")} licenses={professionalData[0].licenses}/>
             </ElementItem>
           </Element>
         </RightPanel>
