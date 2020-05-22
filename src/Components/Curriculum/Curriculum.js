@@ -8,7 +8,8 @@ import ElementItem from './ElementItem/ElementItem';
 import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 
 const Container = styled.div`
-  margin: 0px 10px;
+  margin-left: 10px;
+  margin-right: 0px;
   height: 100%;
 `;
 
@@ -20,6 +21,7 @@ const LeftPanel = styled.div`
 
 const RightPanel = styled.div`
   margin: auto;
+  padding-right: 0px;
 `;
 
 const Curriculum = () => {
