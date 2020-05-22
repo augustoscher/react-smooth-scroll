@@ -1,13 +1,13 @@
 import React from "react";
-// import styled from "styled-components";
 import TitleItem from "../TitleItem/TitleItem";
+import EducationItem from './EducationItem/EducationItem';
 
 const Education = ({ title, graduations }) => {
   return (
     <>
       <TitleItem title={title} />
       {graduations.map((grad, id) => (
-        <p key={id}>{grad.name}</p>
+        <EducationItem key={id} education={grad} />
       ))}
     </>
   );
