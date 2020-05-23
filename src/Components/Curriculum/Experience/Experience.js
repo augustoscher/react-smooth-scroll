@@ -1,13 +1,13 @@
 import React from "react";
-// import styled from "styled-components";
 import TitleItem from "../TitleItem/TitleItem";
+import ExperienceItem from "./ExperienceItem/ExperienceItem";
 
 const Experience = ({ title, experiences }) => {
   return (
     <>
       <TitleItem title={title} />
-      {experiences.map((grad, id) => (
-        <p key={id}>{grad.name}</p>
+      {experiences.map((exp, id) => (
+        <ExperienceItem key={id} experience={exp} />
       ))}
     </>
   );

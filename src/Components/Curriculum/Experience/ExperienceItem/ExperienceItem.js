@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import icon from "../../../../Assets/Icons/icon-education.svg";
+import icon from "../../../../Assets/Icons/icon-experience.svg";
 import Name from '../../Base/Name/Name';
 import When from '../../Base/When/When';
 import Where from '../../Base/Where/Where';
@@ -10,8 +10,8 @@ const Content = styled.div`
   margin-bottom: 30px;
 `;
 
-const EducationItem = ({ education }) => {
-  const { name, location, when } = education;
+const ExperienceItem = ({ experience }) => {
+  const { name, location, when } = experience;
   return (
     <Content className="resume-wrap d-flex ftco-animate fadeInUp ftco-animated">
       <ImgContent icon={icon} />
@@ -19,10 +19,10 @@ const EducationItem = ({ education }) => {
         <When date={when} />
         <Name text={name} />
         <Where location={location} />
-        <p>Falar um pouco sobre o curso.</p>
+        <p>Falar um pouco da experiencia.</p>
       </div>
     </Content>
   );
 }
 
-export default EducationItem;
+export default ExperienceItem;
