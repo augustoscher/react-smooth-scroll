@@ -22,17 +22,17 @@ const Img = styled.img`
   border-style: none;
 `;
 
+const Div = styled.div`
+width: 100%;
+display: block;
+border-radius: 4px;
+`;
+
 const Text = styled.h3`
   font-size: 16px;
   font-weight: 350;
   line-height: 1.5;
   margin-bottom: 0;
-`;
-
-const Div = styled.div`
-  width: 100%;
-  display: block;
-  border-radius: 4px;
 `;
 
 const A = styled.a`

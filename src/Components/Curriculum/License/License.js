@@ -1,13 +1,13 @@
 import React from "react";
-// import styled from "styled-components";
 import TitleItem from "../TitleItem/TitleItem";
+import LicenseItem from './LicenseItem/LicenseItem';
 
 const License = ({ title, licenses }) => {
   return (
     <>
       <TitleItem title={title} />
-      {licenses.map((grad, id) => (
-        <p key={id}>{grad.name}</p>
+      {licenses.map((license, id) => (
+        <LicenseItem key={id} license={license} />
       ))}
     </>
   );
