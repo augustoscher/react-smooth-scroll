@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import icon from "../../../../Assets/Icons/icon-education.svg";
+import Name from '../../Name/Name';
+import When from '../../When/When';
+import Where from '../../Where/Where';
 
 const DivImg = styled.div`
   display: flex !important;
@@ -34,9 +37,9 @@ const EducationItem = ({ education }) => {
         <Img src={icon} />
       </DivImg>
       <div className="text pl-3">
-        <span className="date">{when}</span>
-        <h2>{name}</h2>
-        <span className="position">{location}</span>
+        <When date={when} />
+        <Name text={name} />
+        <Where location={location} />
         <p>Falar um pouco sobre o curso.</p>
       </div>
     </Content>
