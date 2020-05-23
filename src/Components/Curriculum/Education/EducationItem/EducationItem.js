@@ -1,29 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import icon from "../../../../Assets/Icons/icon-education.svg";
-import Name from '../../Name/Name';
-import When from '../../When/When';
-import Where from '../../Where/Where';
-
-const DivImg = styled.div`
-  display: flex !important;
-  width: 60px;
-  height: 60px;
-  background: var(--tertiary);
-  margin-bottom: 10px;
-  border-radius: 50%;
-
-  &:hover {
-    background: var(--dark);
-  }
-`;
-
-const Img = styled.img`
-  color: #000aff;
-  width: 24px;
-  vertical-align: middle;
-  border-style: none;
-`;
+import Name from '../../Base/Name/Name';
+import When from '../../Base/When/When';
+import Where from '../../Base/Where/Where';
+import ImgContent from '../../Base/ImgContent/ImgContent';
 
 const Content = styled.div`
   margin-bottom: 30px;
@@ -33,9 +14,10 @@ const EducationItem = ({ education }) => {
   const { name, location, when } = education;
   return (
     <Content className="resume-wrap d-flex ftco-animate fadeInUp ftco-animated">
-      <DivImg className="icon d-flex align-items-center justify-content-center">
+      {/* <DivImg className="icon d-flex align-items-center justify-content-center">
         <Img src={icon} />
-      </DivImg>
+      </DivImg> */}
+      <ImgContent icon={icon} />
       <div className="text pl-3">
         <When date={when} />
         <Name text={name} />
