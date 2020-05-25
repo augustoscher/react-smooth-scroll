@@ -7,10 +7,9 @@ import styled from "styled-components";
 import Navbar from "./Components/Navbar/Navbar";
 import Section from "./Components/Section/Section";
 import SectionCurriculum from './Components/Section/SectionCurriculum/SectionCurriculum';
-import CvDownload from './Components/CvDownload/CvDownload';
+// import CvDownload from './Components/CvDownload/CvDownload';
 import SECTION_TYPES from "./Constants/SectionType";
 
-// import fetchProfessionalData from "./Services/fetchProfessionalInfo";
 import postVisits from "./Services/postVisits";
 
 const BodyContent = styled.div`
@@ -47,7 +46,7 @@ function App() {
         <Section colored={false} id={SECTION_TYPES.HELLO} />
         <Section colored={false} id={SECTION_TYPES.ABOUT} />
         <SectionCurriculum colored={false} id={SECTION_TYPES.CURRICULUM}/>
-        <CvDownload />
+        {/* <CvDownload /> */}
         <Section colored={false} id={SECTION_TYPES.CONTACT} />
       </BodyContent>
       <Footer>

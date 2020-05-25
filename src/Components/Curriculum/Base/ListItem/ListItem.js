@@ -9,6 +9,7 @@ const Li = styled.li`
   font-size: 18px;
   opacity: 1 !important;
   margin-bottom: 5px;
+  cursor: pointer;
 
   &:hover {
     color: var(--primary);

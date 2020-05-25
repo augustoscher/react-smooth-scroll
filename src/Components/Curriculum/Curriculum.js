@@ -13,7 +13,7 @@ import fetchProfessionalData from "../../Services/fetchProfessionalInfo";
 const Container = styled.div`
   margin-left: 10px;
   margin-right: 0px;
-  height: 100%;
+  min-height: 700px;
 `;
 
 const LeftPanel = styled.div`
@@ -23,7 +23,10 @@ const LeftPanel = styled.div`
 `;
 
 const RightPanel = styled.div`
-  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
   padding-right: 0px;
 `;
 

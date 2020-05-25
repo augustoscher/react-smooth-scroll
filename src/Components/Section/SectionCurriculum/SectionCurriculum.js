@@ -3,7 +3,7 @@ import styled from "styled-components";
 import componentRelations from "../componentsRelations";
 
 const Content = styled.div`
-  margin: 10px 0px 10px 10px;
+  margin: 10px 0px 0px 10px;
 `;
 
 const SectionCurriculum = ({ id, colored }) => {
