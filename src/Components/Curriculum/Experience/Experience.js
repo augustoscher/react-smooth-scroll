@@ -1,5 +1,5 @@
 import React from "react";
-import TitleItem from "../TitleItem/TitleItem";
+import TitleItem from "../Base/TitleItem/TitleItem";
 import ExperienceItem from "./ExperienceItem/ExperienceItem";
 
 const Experience = ({ title, experiences }) => {

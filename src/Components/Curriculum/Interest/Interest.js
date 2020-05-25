@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InterestCard from "./InterestCard/InterestCard";
-import TitleItem from "../TitleItem/TitleItem";
+import TitleItem from "../Base/TitleItem/TitleItem";
 
 const Content = styled.div`
   display: flex;

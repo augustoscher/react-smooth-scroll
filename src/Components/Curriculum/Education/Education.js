@@ -1,5 +1,5 @@
 import React from "react";
-import TitleItem from "../TitleItem/TitleItem";
+import TitleItem from "../Base/TitleItem/TitleItem";
 import EducationItem from './EducationItem/EducationItem';
 
 const Education = ({ title, graduations }) => {
