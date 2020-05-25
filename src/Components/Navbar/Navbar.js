@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import i18n from '../../i18n';
-
 import { Link } from "react-scroll";
 import SECTION_TYPES from "../../Constants/SectionType";
 import "./Navbar.css";
+
+import postPageViews from '../../Services/postPageViews';
 
 const NavItem = styled.div`
   padding: 8px;
@@ -56,6 +57,7 @@ const renderNav = (t) => {
           smooth={true}
           offset={-70}
           duration={500}
+          onClick={() => postPageViews(value.sectionId)}
         >
           <NavItem>{text}</NavItem>
         </Link>
